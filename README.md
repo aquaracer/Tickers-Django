@@ -22,16 +22,15 @@ http://www.nasdaq.com/symbol/cvx/insider-trades - страница с финан
 ### основные файлы приложения:
 
 ##### views.py
-В данном модуле находятся основные функции для работы с API и их описание
-https://github.com/aquaracer/Tickers-Django/blob/master/app1/views.py
+В данном модуле находятся основные функции для работы с API и их описание. 
+Более подробное описание в самом файле по ссылке: https://github.com/aquaracer/Tickers-Django/blob/master/app1/views.py
 
 ##### parser.py
 В данном модуле находятся функции(и их описание), осуществяющие сбор данных с сайтов и сохранение данных в базу.
-https://github.com/aquaracer/Tickers-Django/blob/master/app1/parser.py
+Более подробное описание в самом файле по ссылке: https://github.com/aquaracer/Tickers-Django/blob/master/app1/parser.py
 
 ##### get_delta.py
-В данном модуле находится функция(и ее описание), которая производит поиск минимального периода (дата начала-дата конца) когда указанная цена изменила на величину N или более (пункт №7 в техническом задании)
-https://github.com/aquaracer/Tickers-Django/blob/master/app1/get_delta.py
+В данном модуле находится функция(и ее описание), которая производит поиск минимального периода (дата начала-дата конца) когда указанная цена изменила на величину N или более (пункт №7 в техническом задании). Более подробное описание в самом файле по ссылке: https://github.com/aquaracer/Tickers-Django/blob/master/app1/get_delta.py
 
 ##### ссылка на приложение:
 http://194.87.239.177
