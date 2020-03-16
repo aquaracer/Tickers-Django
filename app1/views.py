@@ -150,7 +150,11 @@ def delta_func(request, stock_name):
     value = int(data[0][7:])  # получаем величину изменения цены на акцию из ссылки
     type = data[1][5:]  # получаем тип цены из ссылки
     filtered_tickers = Tickers.objects.filter(stock_name=stock_name).order_by('date').values(type, 'date')
-    essential_period, data = get_delta(filtered_tickers, value, type)
+    essential_period, data = get_delta(filtered_tickers, value, type) # запускаем функцию get_delta. функция возвращает 2 
+                                                                      # параметра: essential_period(bool type) - данный параметр
+                                                                      # указывает был ли найден заданный период, data - словарь с
+                                                                      # c данными о минимальном периоде(или периодах если таких 
+                                                                      # несколько).
     if essential_period:
         responce = {'periods': data}  # ответ с данными о периоде
     else:
